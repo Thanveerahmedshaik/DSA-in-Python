@@ -29,3 +29,12 @@ else:
 # The number of digits in 12345 is: 5
 # This method is particularly useful in competitive programming and scenarios where performance is critical.
 # It leverages the mathematical properties of logarithms to provide a quick solution.
+
+
+
+# Whats the time and space complexity of this code?
+# If the iteration is done using a loop the time complexity is O(log 10 (n)) and space complexity is O(1).
+# However, since we are using the logarithm function directly, the time complexity is O(1) and space complexity is also O(1).
+# This is because the logarithm function computes the number of digits in constant time without needing to iterate through the digits of the number.
+# Thus, the overall time complexity is O(1) and space complexity is O(1).
+
