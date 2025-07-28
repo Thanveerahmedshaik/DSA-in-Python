@@ -21,3 +21,10 @@ while n > 0:
   n //= 10
 
 print("Reversed number:", reversed_number)
+
+
+# Reversing the number using string manipulation
+reversed_string = str(number)[::-1]
+print("Revesing the number using string manipulation:", reversed_string)
+# this method is more concise and leverages
+# pythons string slicing capabilities.
