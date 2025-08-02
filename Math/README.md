@@ -17,13 +17,23 @@ This folder contains Python solutions for common math-related problems often ask
 
 ---
 
-### 🚀 How to Run
+---
 
-To run any file locally:
+## 🚀 How to Run
+
+To run any file locally using Python 3:
 
 ```bash
 python3 filename.py
+```
 
-Example:
+🔹 Example:
+
 ```bash
 python3 1_digit_extaction_and_reversing_number.py
+```
+
+> ⚠️ Make sure Python 3 is installed. You can check using:
+> ```bash
+> python3 --version
+> ```
