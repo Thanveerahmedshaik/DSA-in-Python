@@ -4,4 +4,4 @@
 3. Count the number of digits in an Integer using logarithm
 4. Checking if a number is palindrome or not
 5. Armstrong number
-6. 
+6. Print all Factors of a given number
