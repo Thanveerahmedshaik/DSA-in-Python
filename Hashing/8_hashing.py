@@ -59,6 +59,23 @@ def store_frequency_string(s, q):
 
 
 
+# test function to demonstrate the usage of the above functions
 
 
+def test_store_frequency():
+    n = [5, 6, 7, 7, 1, 9, 111, 1, 1, 5, 1, 1]
+    m = [1,2,3,4,54,6,7,87,89]
+    s = "azbcdnnnnsxkkgld"
+    q = ['a', 'b', 'c', 'd', 'n', 's', 'x', 'k', 'g', 'l']
 
+    print("Using bruteforce method:")
+    store_frequency_brute_force(n,m)
+    print("Using hashlist method:")
+    store_frequency_hashlist(n,m)
+    print("Using counter method:")
+    store_frequency_dictionary(n,m)
+    print("Using Counter method for strings:")
+    store_frequency_string(s,q)
+
+if __name__ == '__main__':
+    test_store_frequency()
