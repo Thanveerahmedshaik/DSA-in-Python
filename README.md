@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-📁 [Math](Math/)
+📁 [Math](Math/)<br>
 📁 [Hashing](Hashing/)
 
 

@@ -22,3 +22,8 @@ else:
 # The while loop iterates through the digits of the number, so it depends on the number of 
 # digits in the number. The time complexity is O(log10(n)), where n is the input number.
 # The number of constants is fixed and does not depend on the input size, so the space complexity is O(1).
+
+if is_palindrome(number):
+    print(f"{number} is a palindrome.")
+else:
+    print(f"{number} is not a palindrome.")
