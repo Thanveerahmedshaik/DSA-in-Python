@@ -18,7 +18,8 @@ def factorial_recursion(n):
         return 1
     return n * factorial_recursion(n-1)
 
-
+#time complexity: O(N) due to the n recursive calls in sum_recursion and n-1 recursive calls in factorial_recursion. 
+#space complexity: O(N) based on stack space used by the recursion calls.
 #test function to demonstrate the usage of the above functions
 
 class TestRecursionFunctions(unittest.TestCase):
