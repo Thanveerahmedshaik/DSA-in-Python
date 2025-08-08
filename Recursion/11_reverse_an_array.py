@@ -47,7 +47,9 @@ class TestReverseList(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(exit=False)
+    unittest.main(exit=False) # This prevents the script from exiting after running tests
+    # This allows the script to continue running after tests, useful for demonstration purposes.
+    
     # Example usage
     original_list = [1, 2, 3, 4, 5]
     print("Original array:", original_list)
