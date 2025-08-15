@@ -8,22 +8,27 @@ def fibonacci(n: int) -> int:
        return 0
    if n == 1:
        return 1
-   return fibonnaci(n - 1) + fibonnaci(n - 2)
+   return fibonacci(n - 1) + fibonacci(n - 2)
+
+# The time complexity of this function is O(2^N) due to the two recursive calls.
+# The space complexity is O(N) because the maximum depth of the recursion stack is N.
+
+
 
 
 #Tests
 def test_fibonacci():
-   assert fibonnaci(0) == 0 , "Failed on 0"
-   assert fibonnaci(1) == 1, "Failed on 1"
-   assert fibonnaci(2) == 1, "Failed on 2"
-   assert fibonnaci(3) == 2, "Failed on 3"
-   assert fibonnaci(4) == 3, "Failed on 4"
-   assert fibonnaci(5) == 5, "Failed on 5"
-   assert fibonnaci(6) == 8, "Failed on 6"
-   assert fibonnaci(7) == 13, "Failed on 7"
-   assert fibonnaci(8) == 21, "Failed on 8"
-   assert fibonnaci(9) == 34, "Failed on 9"
-   assert fibonnaci(10) == 55, "Failed on 10"
+   assert fibonacci(0) == 0 , "Failed on 0"
+   assert fibonacci(1) == 1, "Failed on 1"
+   assert fibonacci(2) == 1, "Failed on 2"
+   assert fibonacci(3) == 2, "Failed on 3"
+   assert fibonacci(4) == 3, "Failed on 4"
+   assert fibonacci(5) == 5, "Failed on 5"
+   assert fibonacci(6) == 8, "Failed on 6"
+   assert fibonacci(7) == 13, "Failed on 7"
+   assert fibonacci(8) == 21, "Failed on 8"
+   assert fibonacci(9) == 34, "Failed on 9"
+   assert fibonacci(10) == 55, "Failed on 10"
 
 if __name__ == "__main__":
     try:
