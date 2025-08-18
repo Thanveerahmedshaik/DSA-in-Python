@@ -13,8 +13,3 @@ def selection_sort(arr: list[int]) -> list[int]:
 # The space complexity is O(1) since it sorts the array in place without using any additional data structures.
 
 
-# Tests
-print(selection_sort([64, 25, 12, 22, 11]))  # [11, 12, 22, 25, 64]
-print(selection_sort([5, 4, 3, 2, 1]))        # [1, 2, 3, 4, 5]
-print(selection_sort([1, 2, 3, 4, 5]))        # [1, 2, 3, 4, 5]
-print(selection_sort([]))                     # []
