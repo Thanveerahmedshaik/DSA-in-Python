@@ -2,7 +2,9 @@
 
 📁 [Math](Math/)<br>
 📁 [Hashing](Hashing/)<br>
-📁 [Recursion](Recursion/)
+📁 [Recursion](Recursion/)<br>
+📁 [Sorting](Sorting/)<br>
+
 
 
 > Built with ❤️ by [@Thanveerahmedshaik](https://github.com/Thanveerahmedshaik) and [@SiddharthKola](https://github.com/SiddharthKola)
