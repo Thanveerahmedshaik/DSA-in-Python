@@ -1,19 +1,22 @@
 # Remove duplicates in a sorted array and return the number of unique elements
-
+from typing import List
 # Bruteforce Approach
-def remove_duplicates_in_sorted_array_bruteforce(arr: list[int]) -> int:
-  n = len(arr)
-  if n == 0:
-    return 0
-  if n == 1:
-    return 1
-  frequency_map = {}
-  for i in range(n):
-    frequency_map[arr[i]] = frequency_map.get(arr[i],0) + 1
-  unique_elements = 0
-  for key in frequency_map:
-    unique_elements += 1
-  return unique_elements
+
+class solution():
+  
+  def remove_duplicates_in_sorted_array_bruteforce(arr: List[int]) -> int:
+    n = len(arr)
+    if n == 0:
+      return 0
+    if n == 1:
+      return 1
+    frequency_map = {}
+    for i in range(n):
+      frequency_map[arr[i]] = frequency_map.get(arr[i],0) + 1
+    unique_elements = 0
+    for key in frequency_map:
+      unique_elements += 1
+    return unique_elements
 
 # This function modifies the input array in-place
 # Time Complexity: O(2n) simplified to O(n)
@@ -32,20 +35,20 @@ def remove_duplicates_in_sorted_array_bruteforce(arr: list[int]) -> int:
 
 # If the array is empty, we simply return 0, as there are no elements to process.
 # Optimal Two Pointer Approach
-def remove_duplicates_in_sorted_array(arr: list[int]) -> int:
-  n = len(arr)
-  i = 0 
-  j = i + 1
-  if n == 0:
-    return 0
-  if n == 1:
-    return 1
-  while j < n:
-    if arr[i] != arr[j]:
-      i += 1
-      arr[i],arr[j] = arr[j],arr[i]
+  def remove_duplicates_in_sorted_array(arr: List[int]) -> int:
+    n = len(arr)
+    i = 0 
+    j = i + 1
+    if n == 0:
+      return 0
+    if n == 1:
+      return 1
+    while j < n:
+      if arr[i] != arr[j]:
+        i += 1
+        arr[i],arr[j] = arr[j],arr[i]
       j += 1
-  return i+1
+    return i+1
 
 # Time complexity = O(n)
 # Space Complexity = O(1)
