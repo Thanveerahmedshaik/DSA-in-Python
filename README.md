@@ -4,6 +4,8 @@
 📁 [Hashing](Hashing/)<br>
 📁 [Recursion](Recursion/)<br>
 📁 [Sorting](Sorting/)<br>
+📁 [Lists](Lists/)<br>
+📁 [Leetcode](Leetcode/)<br>
 
 
 
