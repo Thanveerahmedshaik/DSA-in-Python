@@ -7,5 +7,14 @@ def right_rotate_array_by_k_places(arr: list[int], k: int) -> list[int]:
             arr[j+1] = arr[j] # Shift elements to the right
         arr[0] = temp # Place the last element at the front 
     return arr
-# Test the function
-print(right_rotate_array_by_k_places([1, 2, 3, 4, 5], 2)) # Output: [4, 5, 1, 2, 3]
+
+# Optimal solution 
+
+def rotate_array(array: list[int], k: int):
+    n = len(array)
+    k = k % n
+    array[:] = array[n-k:] + array[:n-k]
+
+
+# Time complexity is : O(n)
+# Space complexity is : O(1) as it takes inplace
